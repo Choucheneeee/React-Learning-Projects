@@ -1,0 +1,21 @@
+
+.welcome{
+  font-size:4em;
+  background-color:rgba(36, 193, 11, 0.447);
+  color:wheat;
+  padding: 10px;
+  border-radius: 5px;
+  margin:0px;
+  text-align: center;
+}
+
+
+.prompt{
+  font-size:4em;
+  background-color:rgba(191, 11, 8, 0.699);
+  color:wheat;
+  padding: 10px;
+  border-radius: 5px;
+  margin:0px;
+  text-align: center;
+}
