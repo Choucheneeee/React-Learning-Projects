@@ -11,8 +11,20 @@ function App() {
     {id:3 ,name:"banana",calories:47},
     {id:4 ,name:"coconut",calories:63},
     {id:5 ,name:"pinapple",calories:73}]
+  const animals= [
+      {id:1 ,name:"Dog",calories:55},
+      {id:2 ,name:"cat",calories:164},
+      {id:3 ,name:"racoun",calories:47},
+      {id:4 ,name:"arneb",calories:63},
+      {id:5 ,name:"chat",calories:73}]
 
-  return (<List items={fruits} category="Fruits"/>);
+
+  return (
+  <>
+      {fruits.length >0 && <List items={fruits} category="Fruits"/>}
+      {animals.length>0 && <List items={animals} category="animals"/>}
+
+  </>);
 
 }
 

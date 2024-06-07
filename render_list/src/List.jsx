@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 
 function List(props){
      
@@ -8,6 +9,7 @@ function List(props){
       
     //const lowCalFruit=fruits.filter(ghala=>ghala.calories<100) //FILTER ILI AKBER MIL 100 LE
     //const highCalFruit=fruits.filter(ghala=>ghala.calories>=100)
+    const category=props.category
 
     const ghala=props.items
 
@@ -15,6 +17,26 @@ function List(props){
                                         {f.name}:&nbsp;&nbsp;     
                                         <b>{f.calories}</b></li> 
                                         );
-    return (<ol>{listItems}</ol>)
+    return (
+        <>
+        <h3 className="list-cat">{category}</h3>
+        <ol className="list-i">{listItems }</ol>
+        </>
+
+
+    );
+}
+
+List.PropTypes={
+    category:PropTypes.string,
+    items:PropTypes.arrayOf(PropTypes.shape({id:PropTypes.number,
+                                             name:PropTypes.string,
+                                             calories:PropTypes.number
+    }))
+
+}
+List.defaultProps={
+    category:"Category",
+    items:[]
 }
 export default List
