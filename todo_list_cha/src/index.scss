@@ -280,7 +280,7 @@ $cornflower-lilac: white;
   &:required:valid {
       color: $salmon;
 
-      + .c-form__buttonLabel {
+      + .c-form__buttonLabel { 
           color: $white;
 
           &::before {
