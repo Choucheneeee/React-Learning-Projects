@@ -1,8 +1,9 @@
 
-import React, { Component } from 'react';
+import React, { Component,useEffect } from 'react';
 import Modifycomp from './IncrmComp.jsx';
 
 class Hovercomp extends Component {
+  
   render() {
     const { count, incremenent } = this.props;
     return (
