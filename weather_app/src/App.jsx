@@ -3,7 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import './index.css'
+import './css.scss'
+
 import Search from './Search'
+import { GalleryWithCarousel } from './GalleryWithCarousel'
+
 
 
 
@@ -12,7 +16,6 @@ function App() {
 
   return (
     <>
-      
     <Search/>
     </>
   );
